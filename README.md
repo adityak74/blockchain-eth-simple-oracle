@@ -1,10 +1,10 @@
-# Barebones example
+# 
 
 # Setting up
 ```
 npm install -g truffle ethereumjs-testrpc
 npm install
-testrpc &
+ganache-cli &
 truffle compile && truffle migrate
 ```
 
@@ -16,4 +16,9 @@ node oracle.js
 # Running your client
 ```
 node client.js
+```
+
+# Credits
+```
+Thanks to Kendrick for base code https://github.com/kendricktan/ethoracle-barebones
 ```
