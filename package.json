@@ -1,16 +1,21 @@
 {
-  "name": "ethoracle-barebones",
-  "version": "1.0.0",
-  "description": "",
+  "name": "blockchain-eth-simple-oracle",
+  "version": "1.0.1",
+  "description": "A simple ethereum based oracle network, contract, server in NodeJS",
   "main": "client.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "fetch": "^1.1.0",
-    "truffle-contract": "^3.0.1",
-    "web3": "^1.0.0-beta.24"
+    "@truffle/contract": "4.3.43",
+    "@truffle/hdwallet-provider": "2.0.0",
+    "bluebird": "3.7.2",
+    "dotenv": "10.0.0",
+    "fetch": "1.1.0",
+    "truffle-contract": "4.0.31",
+    "truffle-plugin-verify": "0.5.19",
+    "web3": "1.6.1",
+    "yargs": "^17.3.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kendricktan/ethoracle-barebones.git"
+    "url": "git+https://github.com/adityak74/blockchain-eth-simple-oracle.git"
   },
-  "author": "Kendrick Tan",
+  "author": "Aditya Karnam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kendricktan/ethoracle-barebones/issues"
+    "url": "https://github.com/adityak74/blockchain-eth-simple-oracle/issues"
   },
-  "homepage": "https://github.com/kendricktan/ethoracle-barebones#readme"
+  "homepage": "https://github.com/adityak74/blockchain-eth-simple-oracle#readme"
 }
