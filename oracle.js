@@ -32,6 +32,7 @@ web3.eth.getAccounts((err, accounts) => {
   oracleContract.at(oracleContractAddress)
   .then(async (oracleInstance) => {
     let btccap = await oracleInstance.getBTCCap({ from: accounts[0] })
+    await oracleInstance.setBTCCap(100, { from: accounts[0] });
     console.log(btccap)
     oracleContractWss.at(oracleContractAddress).then(async (oracleInstanceWss) => {
       let allEventsFn = oracleInstanceWss.allEvents({ fromBlock: "latest" });
